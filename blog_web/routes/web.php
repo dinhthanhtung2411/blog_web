@@ -17,6 +17,8 @@ Route::get('/signin', 'SigninController@index')->name('signin.index');
 Route::post('/signin', 'SigninController@signin')->name('signin');
 Route::get('/logout', 'SigninController@logout')->name('logout');
 
+Route::get('/register', "RegisterController@show")->name("register.show");
+
 
 Route::middleware('checkSignin')->prefix('admin')->group(function () {
     Route::get('/', function () {
