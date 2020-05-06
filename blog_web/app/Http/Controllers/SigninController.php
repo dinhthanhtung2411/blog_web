@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RequsetFormSignin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -11,7 +12,7 @@ class SigninController extends Controller
         return view('signin.signin');
     }
 
-    public function signin(Request $request)
+    public function signin(RequsetFormSignin $request)
     {
         $data = [
             'email' => $request->email,
