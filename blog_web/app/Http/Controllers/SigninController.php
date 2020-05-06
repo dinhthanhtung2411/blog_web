@@ -23,4 +23,10 @@ class SigninController extends Controller
         }
         return back()->with('\'wrong\', "Wrong password! Try again!"');
     }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/signin');
+    }
 }

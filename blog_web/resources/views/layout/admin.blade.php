@@ -300,9 +300,9 @@
                         <li>
                             <a href="#"><i class="icon_chat_alt"></i> Chats</a>
                        </li>
-{{--                        <li>--}}
-{{--                            <a href="{{route('logout')}}"><i class="icon_key_alt"></i> Log Out</a>--}}
-{{--                        </li>--}}
+                        <li>
+                            <a href="{{route('logout')}}"><i class="icon_key_alt"></i> Log Out</a>
+                        </li>
                         <li>
                             <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
                         </li>
