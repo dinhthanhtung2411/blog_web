@@ -35,7 +35,7 @@
             <form class="login100-form validate-form" action="{{route('signin')}}" method="post">
                 @csrf
 					<span class="login100-form-title p-b-43">
-						Login to continue
+						Login to Blog
 					</span>
 
 
@@ -72,6 +72,12 @@
                     <button class="login100-form-btn">
                         Login
                     </button>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <a href="{{route('register.show')}}" class="text-center">Not have any account?</a>
+                    </div>
                 </div>
 
                 <div class="text-center p-t-46 p-b-20">
