@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/signin', 'SigninController@index')->name('signin.index');
 Route::post('/signin', 'SigninController@signin')->name('signin');
+Route::get('/logout', 'SigninController@logout')->name('logout');
 
 
 Route::middleware('checkSignin')->prefix('admin')->group(function () {
