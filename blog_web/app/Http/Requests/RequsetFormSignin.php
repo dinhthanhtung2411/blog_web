@@ -28,4 +28,12 @@ class RequsetFormSignin extends FormRequest
             'password' => 'required'
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'email.required'=>'Ban phai nhap email',
+            'password.required'=>'Ban phai nhap mat khau'
+        ];
+    }
 }
