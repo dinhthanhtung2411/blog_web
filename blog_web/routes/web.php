@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/signin', 'SignInController@index')->name('signin.index');
+Route::post('/signin', 'SigninController@login')->name('signin');
 
