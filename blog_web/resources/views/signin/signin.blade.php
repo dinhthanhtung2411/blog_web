@@ -39,14 +39,14 @@
 					</span>
 
 
-                <div class="wrap-input100 validate-input" data-validate = "Email/Passord sai">
+                <div class="wrap-input100 validate-input" data-validate = "Email/Password sai">
                     <input class="input100" type="email" name="email" id="email" value="{{old('email')}}">
                     <span class="focus-input100"></span>
                     <span class="label-input100">Email</span>
                 </div>
 
 
-                <div class="wrap-input100 validate-input" data-validate="Email/Passord sai">
+                <div class="wrap-input100 validate-input" data-validate="Email/Password sai">
                     <input class="input100" type="password" name="password">
                     <span class="focus-input100"></span>
                     <span class="label-input100">Password</span>
