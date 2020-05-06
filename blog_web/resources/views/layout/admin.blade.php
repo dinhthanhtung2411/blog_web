@@ -299,10 +299,10 @@
                         </li>
                         <li>
                             <a href="#"><i class="icon_chat_alt"></i> Chats</a>
-                        </li>
-                        <li>
-                            <a href="{{route('logout')}}"><i class="icon_key_alt"></i> Log Out</a>
-                        </li>
+                       </li>
+{{--                        <li>--}}
+{{--                            <a href="{{route('logout')}}"><i class="icon_key_alt"></i> Log Out</a>--}}
+{{--                        </li>--}}
                         <li>
                             <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
                         </li>
@@ -330,76 +330,76 @@
                     </a>
                 </li>
 
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_desktop"></i>
-                        <span>Book</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="{{route('product.list')}}">List</a></li>
-                        <li><a class="" href="{{route('product.create')}}">Add new</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="fa fa-user"></i>
-                        <span>User</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="{{ route('admin.user.index') }}">List</a></li>
-                        <li><a class="" href="{{ route('admin.user.create') }}">Create</a></li>
-                    </ul>
-                </li>
+{{--                <li class="sub-menu">--}}
+{{--                    <a href="javascript:;" class="">--}}
+{{--                        <i class="icon_desktop"></i>--}}
+{{--                        <span>Book</span>--}}
+{{--                        <span class="menu-arrow arrow_carrot-right"></span>--}}
+{{--                    </a>--}}
+{{--                    <ul class="sub">--}}
+{{--                        <li><a class="" href="{{route('product.list')}}">List</a></li>--}}
+{{--                        <li><a class="" href="{{route('product.create')}}">Add new</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li class="sub-menu">--}}
+{{--                    <a href="javascript:;" class="">--}}
+{{--                        <i class="fa fa-user"></i>--}}
+{{--                        <span>User</span>--}}
+{{--                        <span class="menu-arrow arrow_carrot-right"></span>--}}
+{{--                    </a>--}}
+{{--                    <ul class="sub">--}}
+{{--                        <li><a class="" href="{{ route('admin.user.index') }}">List</a></li>--}}
+{{--                        <li><a class="" href="{{ route('admin.user.create') }}">Create</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
 
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="fa fa-user"></i>
-                        <span>Author</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="{{ route('admin.author.list') }}">List</a></li>
-                        <li><a class="" href="{{ route('admin.author.create') }}">Add new</a></li>
-                    </ul>
-                </li>
+{{--                <li class="sub-menu">--}}
+{{--                    <a href="javascript:;" class="">--}}
+{{--                        <i class="fa fa-user"></i>--}}
+{{--                        <span>Author</span>--}}
+{{--                        <span class="menu-arrow arrow_carrot-right"></span>--}}
+{{--                    </a>--}}
+{{--                    <ul class="sub">--}}
+{{--                        <li><a class="" href="{{ route('admin.author.list') }}">List</a></li>--}}
+{{--                        <li><a class="" href="{{ route('admin.author.create') }}">Add new</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
 
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="fa fa-user"></i>
-                        <span>Publisher</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="{{ route('admin.publisher.list') }}">List</a></li>
-                        <li><a class="" href="{{ route('admin.publisher.create') }}">Add new</a></li>
-                    </ul>
-                </li>
+{{--                <li class="sub-menu">--}}
+{{--                    <a href="javascript:;" class="">--}}
+{{--                        <i class="fa fa-user"></i>--}}
+{{--                        <span>Publisher</span>--}}
+{{--                        <span class="menu-arrow arrow_carrot-right"></span>--}}
+{{--                    </a>--}}
+{{--                    <ul class="sub">--}}
+{{--                        <li><a class="" href="{{ route('admin.publisher.list') }}">List</a></li>--}}
+{{--                        <li><a class="" href="{{ route('admin.publisher.create') }}">Add new</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
 
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="fa fa-list-alt" aria-hidden="true"></i>
-                        <span>Categories</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="{{ route('category.create') }}">Create Category</a></li>
-                        <li><a class="" href="{{ route('category.list') }}">List Category</a></li>
-                    </ul>
-                </li>
+{{--                <li class="sub-menu">--}}
+{{--                    <a href="javascript:;" class="">--}}
+{{--                        <i class="fa fa-list-alt" aria-hidden="true"></i>--}}
+{{--                        <span>Categories</span>--}}
+{{--                        <span class="menu-arrow arrow_carrot-right"></span>--}}
+{{--                    </a>--}}
+{{--                    <ul class="sub">--}}
+{{--                        <li><a class="" href="{{ route('category.create') }}">Create Category</a></li>--}}
+{{--                        <li><a class="" href="{{ route('category.list') }}">List Category</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
 
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="fa fa-list-alt" aria-hidden="true"></i>
-                        <span>Blog</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="{{route('admin.blog.create')}}">Create Blog</a></li>
-                        <li><a class="" href="{{ route('admin.blog.list') }}">List Blog</a></li>
-                    </ul>
-                </li>
+{{--                <li class="sub-menu">--}}
+{{--                    <a href="javascript:;" class="">--}}
+{{--                        <i class="fa fa-list-alt" aria-hidden="true"></i>--}}
+{{--                        <span>Blog</span>--}}
+{{--                        <span class="menu-arrow arrow_carrot-right"></span>--}}
+{{--                    </a>--}}
+{{--                    <ul class="sub">--}}
+{{--                        <li><a class="" href="{{route('admin.blog.create')}}">Create Blog</a></li>--}}
+{{--                        <li><a class="" href="{{ route('admin.blog.list') }}">List Blog</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
             </ul>
             <!-- sidebar menu end-->
         </div>

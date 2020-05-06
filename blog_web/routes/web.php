@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/signin', 'SignInController@index')->name('signin.index');
-Route::post('/signin', 'SigninController@login')->name('signin');
+Route::get('/signin', 'SigninController@index')->name('signin.index');
+Route::post('/signin', 'SigninController@signin')->name('signin');
+
+
+Route::middleware('checkSignin')->prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return view('admin.home');
+    })->name('admin.home');
+
+});
+
 
