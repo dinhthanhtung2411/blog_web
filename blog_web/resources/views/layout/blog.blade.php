@@ -48,7 +48,7 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">User</a>
+                    <a class="btn btn-primary" href="">New Post</a>
                 </li>
             </ul>
         </div>
@@ -134,6 +134,7 @@
         </div>
     </div>
 </footer>
+
 
 <!-- Bootstrap core JavaScript -->
 <script src={{asset("vendor/jquery/jquery.min.js")}}></script>
