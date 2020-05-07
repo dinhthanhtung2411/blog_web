@@ -21,6 +21,10 @@ class SigninController extends Controller
         $remember = $request->remember;
 
         if (Auth::attempt($data, $remember)){
+
+            if (Auth::user()->role == RoleConstant::ADMIN) {
+                return redirect('/admin');
+            }
             return redirect('/');
         }
         return back()->with('\'wrong\', "Wrong password! Try again!"');
