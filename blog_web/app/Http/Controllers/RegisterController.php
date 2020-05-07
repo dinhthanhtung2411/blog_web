@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RequestRegister;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -13,7 +14,7 @@ class RegisterController extends Controller
         return view('signin.register');
     }
 
-    public function register(Request $request)
+    public function register(RequestRegister $request)
     {
         $user = new User();
         $user->fill($request->input());
