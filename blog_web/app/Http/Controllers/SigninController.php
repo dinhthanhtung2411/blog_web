@@ -21,6 +21,7 @@ class SigninController extends Controller
         $remember = $request->remember;
 
         if (Auth::attempt($data, $remember)){
+
             if (Auth::user()->role == RoleConstant::ADMIN) {
                 return redirect('/admin');
             }
@@ -32,6 +33,6 @@ class SigninController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect('/signin');
+        return redirect('/');
     }
 }
