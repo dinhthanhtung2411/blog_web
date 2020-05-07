@@ -41,7 +41,7 @@
                     <div class="alert-success row">{{ Session::get('alert') }}</div>
                 @endif
 
-                <div class="wrap-input100 validate-input" data-validate = "Valid  is required: ex@abc.xyz">
+                <div class="wrap-input100 validate-input" data-validate = "Bạn phải nhập tên đăng nhập">
                     <input class="input100 @error('name') alert-danger @enderror" type="text" name="name" id="email" value="{{ old('name') }}">
                     <span class="focus-input100"></span>
                     <span class="label-input100">Username</span>
@@ -51,7 +51,7 @@
                 <p class="text-danger">{{ $message }}</p>
                 @enderror
 
-                <div class="wrap-input100 validate-input" data-validate = "Valid  is required: ex@abc.xyz">
+                <div class="wrap-input100 validate-input" data-validate = "Bạn phải nhập email">
                     <input class="input100 @error('email') alert-danger @enderror" type="email" name="email" id="email" value="{{ old('email') }}">
                     <span class="focus-input100"></span>
                     <span class="label-input100">Email</span>
@@ -67,7 +67,7 @@
                 {{--                    <span class="label-input100">Avatar</span>--}}
                 {{--                </div>--}}
 
-                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                <div class="wrap-input100 validate-input" data-validate="Bạn phải nhập password ">
                     <input class="input100 @error('password') alert-danger @enderror" type="password" name="password"
                            id="password" value="{{ old('password') }}">
                     <span class="focus-input100"></span>
@@ -82,7 +82,7 @@
                     @endif
                     @enderror
 
-                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <div class="wrap-input100 validate-input" data-validate="Password nhập lại không trùng khớp">
                         <span class="label-input100">Re-type Password</span>
                         <input class="input100" type="password" name="password_confirmation" placeholder="">
                     </div>
