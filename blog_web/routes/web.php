@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\blog\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'BlogController@index');
 
 Route::get('/signin', 'SigninController@index')->name('signin.index');
 Route::post('/signin', 'SigninController@signin')->name('signin');
@@ -24,6 +26,8 @@ Route::middleware('checkSignin')->prefix('admin')->group(function () {
     Route::get('/', function () {
         return view('admin.home');
     })->name('admin.home');
+
+
 
 });
 
