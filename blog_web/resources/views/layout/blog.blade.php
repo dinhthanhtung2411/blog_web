@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Trang Chủ</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
@@ -45,10 +45,22 @@
                     <a class="nav-link" href="post.html">Sample Post</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#">Thể Loại</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">User</a>
+{{--                    <a class="nav-link" href="#">--}}
+{{--                        <i class="fas fa-circle fa-stack-2x"></i>--}}
+{{--                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>--}}
+{{--                        <span class="btn btn-primary float-right"></span></a>--}}
+                    <form class="form-inline ml-lg-2"><a  class="btn btn-primary" href="">New Post</a></form>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('logout')}}">Logout</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{Auth::user()->name}}"></a>
                 </li>
             </ul>
         </div>

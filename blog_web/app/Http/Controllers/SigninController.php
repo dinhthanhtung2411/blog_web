@@ -21,7 +21,7 @@ class SigninController extends Controller
         $remember = $request->remember;
 
         if (Auth::attempt($data, $remember)){
-            return redirect('/admin');
+            return redirect('/');
         }
         return back()->with('\'wrong\', "Wrong password! Try again!"');
     }
@@ -29,6 +29,6 @@ class SigninController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect('/signin');
+        return redirect('/');
     }
 }
