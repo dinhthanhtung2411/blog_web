@@ -76,7 +76,7 @@
 
                 <div class="form-group">
                     <div class="col-md-12">
-                        <a href="{{route('register.show')}}" class="text-center">Not have any account?</a>
+                        <a href="{{route('register')}}" class="text-center">Not have any account?</a>
                     </div>
                 </div>
 
