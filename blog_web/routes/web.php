@@ -13,8 +13,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'BlogController@index');
+Route::get('/', function () {
+    return view('user/home');
+});
 
+Route::get('post', function (){
+    return view('user/post');
+})->name('post');
 Route::get('/signin', 'SigninController@index')->name('signin.index');
 Route::post('/signin', 'SigninController@signin')->name('signin');
 Route::get('/logout', 'SigninController@logout')->name('logout');

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>Blog</title>
 
     <!-- Bootstrap core CSS -->
     <link href={{asset('vendor/bootstrap/css/bootstrap.min.css')}} rel="stylesheet">
@@ -31,7 +31,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Not Pass Team</a>
+        <a class="navbar-brand" href="{{route('blog.index')}}">Blog</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Trang Chủ</a>
+                    <a class="nav-link" href="{{route('blog.index')}}">Trang Chủ</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
@@ -82,7 +82,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1>NOT PASS TEAM BLOG</h1>
+                    <h1>BLOG</h1>
                     <span class="subheading">A Blog Theme by Start Bootstrap</span>
                 </div>
             </div>
@@ -91,31 +91,7 @@
 </header>
 
 <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        Man must explore, and this is exploration at its greatest
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Problems look mighty small from 150 miles up
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by
-                    <a href="#">Start Bootstrap</a>
-                    on September 24, 2019</p>
-            </div>
-            <hr>
-            <!-- Pager -->
-            <div class="clearfix">
-                <span class="btn btn-primary float-right">Next</span>
-            </div>
-        </div>
-    </div>
-</div>
-
+@yield('list')
 <hr>
 
 <!-- Footer -->
