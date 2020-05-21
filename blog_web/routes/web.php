@@ -27,9 +27,6 @@ Route::middleware('checkSignin')->prefix('admin')->group(function () {
     Route::get('/', function () {
         return view('admin.home');
     })->name('admin.home');
-
-
-
 });
 
 

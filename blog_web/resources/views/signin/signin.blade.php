@@ -38,9 +38,13 @@
 						Login to Blog
 					</span>
 
+                @if(Session::has('alert'))
+                    <div class="alert-success row">{{ Session::get('alert') }}</div>
+                @endif
+
 
                 <div class="wrap-input100 validate-input" data-validate = "Email/Password sai">
-                    <input class="input100" type="email" name="email" id="email" value="{{old('email')}}">
+                    <input class="input100" type="email" name="email" id="email" placeholder="{{old('email')}}">
                     <span class="focus-input100"></span>
                     <span class="label-input100">Email</span>
                 </div>

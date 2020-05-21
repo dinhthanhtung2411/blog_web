@@ -22,6 +22,8 @@ class RegisterController extends Controller
         $user->save();
 
         $alert = 'Created an account successful!';
-        return back()->with('alert', $alert);
+
+
+        return redirect()->route('signin')->with(compact('alert'));
     }
 }
